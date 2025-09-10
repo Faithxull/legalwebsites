@@ -1,0 +1,169 @@
+:root {
+  --bg-dark: #121212;
+  --text-dark: #E0E0E0;
+  --accent: #FFFFFF;
+  --card-bg-dark: rgba(255,255,255,0.05);
+}
+
+/* Base Styles */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Inter', sans-serif; 
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  position: relative;
+  flex-direction: column;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: rgba(18,18,18,0.85);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+  z-index: 20;
+  pointer-events: all;
+}
+
+.sidebar.collapsed { 
+  transform: translateX(-220px); 
+}
+
+/* Categories */
+.categories {
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+}
+
+.categories li {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s, color 0.3s, border 0.3s;
+  border: 2px solid transparent;
+}
+
+.categories li:hover, .categories li.active {
+  background: var(--accent);
+  color: #000;
+  transform: translateX(5px);
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+/* Floating Hamburger */
+.hamburger {
+  position: fixed;
+  top: 1rem; left: 1rem;
+  font-size: 1.5rem;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 25;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.hamburger:hover { 
+  transform: scale(1.1); 
+  background: rgba(0,0,0,0.7); 
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  z-index: 10;
+  position: relative;
+}
+
+/* Wrapper to center content */
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+main h1 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;          /* Make it expand full width */
+  max-width: 1000px;    /* Optional: cap it so it doesn’t stretch too much */
+  margin: 0 auto;       /* Center it horizontally */
+}
+
+.card {
+  background: var(--card-bg-dark);
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.3);
+  z-index: 10;
+  position: relative;
+}
+
+/* Floating Background Canvas */
+#bgCanvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}

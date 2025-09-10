@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Really legal websites</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul class="categories">
+      <li data-category="Movies & Shows" class="active">Movies & Shows</li>
+      <li data-category="Anime">Anime</li>
+      <li data-category="Books">Books</li>
+      <li data-category="Manga">Manga</li>
+      <li data-category="Games">Games</li>
+      <li data-category="Live TV">Live TV</li> <!-- Added Live TV -->
+    </ul>
+  </div>
+
+  <!-- Floating Hamburger -->
+  <button id="hamburger" class="hamburger">☰</button>
+
+  <!-- Main Content -->
+  <main id="main">
+    <div class="content-wrapper">
+      <h1 id="category-title">Movies & Shows</h1>
+      <div class="cards" id="cards"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>By Faith</footer>
+
+  <!-- Floating Background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <script src="js/background.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
