@@ -95,7 +95,7 @@ main {
   flex: 1;
   padding: 2rem;
   display: flex;
-  justify-content: center; /* center horizontally */
+  justify-content: center;
   z-index: 10;
   position: relative;
 }
@@ -123,9 +123,9 @@ main h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.5rem;
-  width: 100%;          /* Make it expand full width */
-  max-width: 1000px;    /* Optional: cap it so it doesn’t stretch too much */
-  margin: 0 auto;       /* Center it horizontally */
+  width: 100%;          
+  max-width: 1000px;    
+  margin: 0 auto;       
 }
 
 .card {
