@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
 
     "Anime": [
-      { name: "Mirjro", url: "https://miruro.to/" },
+      { name: "Miruro", url: "https://miruro.to/" },
       { name: "T Anime", url: "https://tanime.tv/" },
       { name: "Hianime", url: "https://hianime.to/" },
       { name: "Enma", url: "https://enma.lol/" },
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Comick", url: "https://comick.io/" },
       { name: "MangaReader.to", url: "https://mangareader.to/" },
       { name: "Bato.to", url: "https://bato.to/" },
-      { name: "Mangag", url: "https://mangago.com/" },
+      { name: "Mangago", url: "https://mangago.com/" },
       { name: "MangaFire.to", url: "https://mangafire.to/" },
       { name: "All Manga", url: "https://allmanga.to/" },
       { name: "MangaKakalot", url: "https://mangakakalot.com/" },
