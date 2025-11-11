@@ -16,9 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const websites = {
     "Movies & Shows": [
       { name: "1Shows", url: "https://www.1shows.ru/" },
-      { name: "Flicky Stream", url: "https://flickystream.net/" },
-      { name: "RG Shows", url: "https://www.rgshows.me/" },
-      { name: "Vidjoy", url: "https://vidjoy.pro/" },
+      { name: "Flicky Stream", url: "https://flickystream.ru/" },
+      { name: "RG Shows", url: "https://www.rgshows.ru/" },
       { name: "Rivestream", url: "https://rivestream.org/" },
       { name: "Spenflix", url: "https://watch.spencerdevs.xyz/" },
       { name: "Myflixer", url: "https://myflixerz.to/" },
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Xprime", url: "https://xprime.tv/" },
       { name: "Hexa", url: "https://hexa.watch/" },
       { name: "Smashystream", url: "https://smashystream.xyz/" },
-      { name: "Lordflix.cc", url: "https://v2.lordflix.cc/" },
+      { name: "Lordflix.cc", url: "https://lordflix.club/" },
       { name: "P-stream", url: "https://pstream.mov/" },
       { name: "Rar.to Nepu", url: "https://nepu.to" },
       { name: "Willow", url: "https://willow.arlen.icu/" }
@@ -48,7 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Anicrush", url: "https://anicrush.to/" },
       { name: "Kaa", url: "https://kaa.to/" },
       { name: "Animekai", url: "https://animekai.to/" },
-      { name: "Animez", url: "https://animez.org/" }
+    ],
+
+    "K-Drama": [
+      { name: "KissAsianTV", url:"https://kissasiantv.xin/"},
+      { name: "Asiaflix", url: "https://asiaflix.net/home"},
+      { name: "KissAsian", url: "https://ww13.kissasian.com.lv/"},
+      { name: "KissKH", url: "https://kisskh.ws/"},
+      { name: "Dramafull", url: "https://dramafull.cc/"},
+      { name: "Asianc", url: "https://asianctv.net/"},
     ],
 
     "Manga": [
@@ -59,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Mangago", url: "https://mangago.com/" },
       { name: "MangaFire.to", url: "https://mangafire.to/" },
       { name: "All Manga", url: "https://allmanga.to/" },
-      { name: "MangaKakalot", url: "https://mangakakalot.com/" },
+      { name: "MangaKakalot", url: "https://mangakakalot.gg/" },
       { name: "AsuraComic", url: "https://asuracomic.net/" },
       { name: "MangaHub", url: "https://mangahub.io/" },
       { name: "MangaPark", url: "https://mangapark.io/" },
@@ -67,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Manga Katana", url: "https://mangakatana.com/" },
       { name: "Vexo.to", url: "https://vexo.to/" }
     ],
-
+    
     "Books": [
       { name: "LibGen", url: "https://libgen.li/" },
       { name: "Anna's Archive", url: "https://annas-archive.org/" },
