@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Lordflix.cc", url: "https://lordflix.club/" },
       { name: "P-stream", url: "https://pstream.mov/" },
       { name: "Rar.to Nepu", url: "https://nepu.to" },
-      { name: "Willow", url: "https://willow.arlen.icu/" }
+      { name: "Willow", url: "https://willow.arlen.icu/" },
+      { name: "Ext.to (Torrent)", url: "https://ext.to"}
     ],
 
     "Anime": [
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Anicrush", url: "https://anicrush.to/" },
       { name: "Kaa", url: "https://kaa.to/" },
       { name: "Animekai", url: "https://animekai.to/" },
+      { name: "Ext.to (Torrent)", url: "https://ext.to"}
     ],
 
     "K-Drama": [
@@ -56,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "KissKH", url: "https://kisskh.ws/"},
       { name: "Dramafull", url: "https://dramafull.cc/"},
       { name: "Asianc", url: "https://asianctv.net/"},
+      { name: "Ext.to (Torrent)", url: "https://ext.to"}
     ],
 
     "Manga": [
