@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "MangaDex", url: "https://mangadex.org/" },
       { name: "Comick", url: "https://comick.io/" },
       { name: "MangaReader.to", url: "https://mangareader.to/" },
-      { name: "Bato.to", url: "https://bato.to/" },
       { name: "Mangago", url: "https://mangago.com/" },
       { name: "MangaFire.to", url: "https://mangafire.to/" },
       { name: "All Manga", url: "https://allmanga.to/" },
